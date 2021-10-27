@@ -24,7 +24,7 @@ def divide_sort(list):
     def sort_key(name):
         return name[len(name)-1]
     for i in list:
-        value = i.split()
+        value = i.lower().split()
         value_list.append(value)
 
     value_list.sort(key=sort_key,reverse=True)   
@@ -33,7 +33,7 @@ def divide_sort(list):
     Combine the array names into string after sorting
 """
 def combine_name(value_list):
-    return [' '.join(i) for i in value_list]
+    return [' '.join(i).title() for i in value_list]
 
 sorted_list = combine_name(divide_sort(list))
 print("The output is:\n",sorted_list)
