@@ -36,7 +36,7 @@ def combine_name(value_list):
     return [' '.join(i) for i in value_list]
 
 sorted_list = combine_name(divide_sort(list))
-print(sorted_list)
+print("The output is:\n",sorted_list)
 
 """
     Testing
